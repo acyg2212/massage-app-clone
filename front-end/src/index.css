@@ -334,3 +334,31 @@ button:hover{
   text-decoration: none;
   color:blue;
 }
+
+.login-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  font-size:20px;
+}
+
+.login-button{
+  margin-top: 15px;
+  background-color: #FF8162;
+  font-size: 20px;
+  color:white;
+  padding:20px;
+  border-radius: 10px;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
