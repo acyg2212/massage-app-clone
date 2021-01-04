@@ -27,6 +27,16 @@ code {
   font-size: 16px;
 }
 
+.navbar_anchor_button{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-bar-button:focus{
+  outline: none;
+}
+
 .navbar-div__left-group{
   display: flex;
   justify-content: space-between;
@@ -240,4 +250,17 @@ button:hover{
 
 .bottom-div-container{
   color:white;
+}
+
+.footer-div{
+  background-color: #343a40;
+  height:150px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-div__p{
+  margin:0;
+  font-size: 25px;
+  color: teal;
 }
