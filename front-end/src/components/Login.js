@@ -26,14 +26,15 @@ const Login = () => {
             <form className="login-form" onSubmit={buttonClicked}>
                 <div className="login-input">
                     <label for="email-address">Email</label>
-                    <input type="email" name="email-address" value={email} onChange={enterEmail} placeholder="Email" />
+                    <input className="input" type="email" name="email-address" value={email} onChange={enterEmail} placeholder="Email" />
                 </div>
                 <div className="login-input">
                     <label for='password'>Password</label>
-                    <input type="password" name="password" value={password} onChange={enterPassword} placeholder="Password" />
+                    <input className="input" type="password" name="password" value={password} onChange={enterPassword} placeholder="Password" />
                 </div>
                 <button className="login-button" type='submit'>Let's Get Started</button>
             </form>
+            <a className="login-form__a" href='/login'>Already have an account? Sign in</a>
         </div>
     )
 }

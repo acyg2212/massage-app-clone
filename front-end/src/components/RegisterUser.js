@@ -25,7 +25,8 @@ const RegisterUser = () => {
             height: `60%`,
             display: `flex`,
             flexDirection: 'column',
-            alignItems: 'center'
+            alignItems: 'center',
+            justifyContent: "center"
             // height: `fit-content`
         },
         overlay: {
