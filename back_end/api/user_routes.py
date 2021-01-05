@@ -9,6 +9,8 @@ def register():
 
     email = request.json.get('email', None)
     password = request.json.get('password', None)
+    print(email)
+    print(password)
 
 
     if not email or not password:
