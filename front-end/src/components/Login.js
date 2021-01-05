@@ -3,18 +3,39 @@ import React, { useState } from 'react';
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [errors, setErrors] = useState([]);
 
     const enterEmail = e => {
         setEmail(e.target.value)
     }
 
     const enterPassword = e => {
-        setPassword(e.target.password)
+        setPassword(e.target.value)
     }
 
     const buttonClicked = async (e) => {
         e.preventDefault();
-        console.log(email, password);
+        async function signupUser() {
+            console.log(password)
+            const response = await fetch('/api/users/register', {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    email,
+                    password
+                })
+            })
+
+            const responseData = await response.json();
+            if (!response.ok) {
+                setErrors(responseData.errors)
+            } else {
+                console.log(responseData.current_user, responseData.current_user_id)
+            }
+        }
+        signupUser();
     }
 
     return (
@@ -24,6 +45,7 @@ const Login = () => {
             practice.
             </h3>
             <form className="login-form" onSubmit={buttonClicked}>
+                {errors.length ? errors.map(err => <li key={err}>{err}</li>) : ''}
                 <div className="login-input">
                     <label for="email-address">Email</label>
                     <input className="input" type="email" name="email-address" value={email} onChange={enterEmail} placeholder="Email" />
