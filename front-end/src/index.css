@@ -27,6 +27,16 @@ code {
   font-size: 16px;
 }
 
+.navbar_anchor_button{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-bar-button:focus{
+  outline: none;
+}
+
 .navbar-div__left-group{
   display: flex;
   justify-content: space-between;
@@ -240,4 +250,126 @@ button:hover{
 
 .bottom-div-container{
   color:white;
+}
+
+.footer-div{
+  background-color: #343a40;
+  height:150px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom:0;
+  width:100%
+}
+
+.footer-div__p{
+  margin:0;
+  font-size: 25px;
+  color: teal;
+}
+
+.register-user-container-inner{
+  background-image: url("./assets/hero.png");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-user-bottome-container{
+  display: flex;
+  justify-content: space-evenly;
+  width:80%;
+  padding:40px;
+}
+
+.register-user-bottome-container__inner{
+  border:1px grey solid;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(0,0,0,.3);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:40px;
+  padding-bottom:40px;
+  width:430px;
+}
+
+.register-user-bottome-container__inner:hover{
+  background-color: whitesmoke;
+}
+
+.register-user-bottome-container__inner__h2{
+  font-size: 30px;
+  color:whitesmoke;
+  text-shadow: 2px 2px 4px black;
+  margin-bottom:3px;
+  margin-top:3px;
+}
+
+.register-user-bottome-container__inner__button{
+  padding:10px;
+  color:white;
+  border-radius: 5px;
+  border: 1px grey solid;
+  background-color: teal;
+  
+  font-size: 20px;
+}
+
+.register-user-bottome-container__p{
+  color:whitesmoke;
+  text-shadow: 2px 2px 4px black;
+  font-size:18px;
+}
+
+.symbol-div{
+  font-size:80px;
+}
+
+.register-user-container-inner__anchor{
+  text-decoration: none;
+  color:blue;
+}
+
+.login-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  font-size:20px
+}
+
+.login-button{
+  margin-top: 15px;
+  background-color: #FF8162;
+  font-size: 20px;
+  color:white;
+  padding:20px;
+  border-radius: 10px;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form__a{
+  text-decoration: none;
+  color:blue;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.input{
+  font-size:20px;
 }
