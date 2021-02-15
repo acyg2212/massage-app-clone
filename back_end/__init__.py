@@ -13,6 +13,7 @@ db.init_app(app)
 migrate = Migrate(app, db)
 
 app.register_blueprint(user_routes, url_prefix='/api/users')
+app.register_blueprint(square_routes, url_prefix='/api/square')
 
 
 @login_manager.user_loader
