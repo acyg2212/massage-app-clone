@@ -47,11 +47,11 @@ const Login = () => {
             <form className="login-form" onSubmit={buttonClicked}>
                 {errors.length ? errors.map(err => <li key={err}>{err}</li>) : ''}
                 <div className="login-input">
-                    <label for="email-address">Email</label>
+                    <label htmlFor="email-address">Email</label>
                     <input className="input" type="email" name="email-address" value={email} onChange={enterEmail} placeholder="Email" />
                 </div>
                 <div className="login-input">
-                    <label for='password'>Password</label>
+                    <label htmlFor='password'>Password</label>
                     <input className="input" type="password" name="password" value={password} onChange={enterPassword} placeholder="Password" />
                 </div>
                 <button className="login-button" type='submit'>Let's Get Started</button>

@@ -250,14 +250,15 @@ button:hover{
 
 .bottom-div-container{
   color:white;
+  margin-bottom: 150px;
 }
 
 .footer-div{
   background-color: #343a40;
-  height:150px;
+  height:100px;
   display: flex;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   bottom:0;
   width:100%
 }
