@@ -12,7 +12,7 @@ const UpperThird = () => {
                 <form className="homepage-form">
                     <input type='text' placeholder='Location' className="home-page__search" />
 
-                    <input type='checkbox' className="homepage__checkbox" name="homepage-checkbox" />
+                    <input type='checkbox' className="homepage__checkbox" id="homepage-checkbox" />
                     <label for="homepage-checkbox" className="checkbox-label">Travel to me</label>
                     <button className="form-button">Search</button>
                 </form>
